@@ -1,0 +1,16 @@
+
+@houverBgColor: rgba(196, 196, 196, 0.5);
+@blue : #0088f5;
+
+.pointer {
+  cursor: pointer;
+}
+
+.opacity(@name: 1) {
+  /* IE */
+  /* filter: Alpha(opacity :@name*100); */
+  /* FF 主要是为了兼容老版本的FF */
+  -moz-opacity: @name;
+  /* FF */
+  opacity: @name;
+}

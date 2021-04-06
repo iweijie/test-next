@@ -1,0 +1,60 @@
+@import "../../styles/css.less";
+
+:global {
+    nav {
+        height: 56px;
+        background-color: #f1f1f1;
+    }
+
+    .top-nav {
+        position: relative;
+        height: 56px;
+        width: 100%;
+        padding: 0 12.5%;
+        transition: opacity 0.5s linear;
+        margin: 0;
+        background-color: #ffffff;
+
+        &.top-nav-fixed {
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        li {
+            float: left;
+            line-height: 56px;
+            height: 56px;
+            text-align: center;
+            cursor: pointer;
+            padding: 0 1rem;
+            display: inline-block;
+            height: 100%;
+            color: #333;
+
+            &:hover {
+                color: #000;
+                background-color: rgba(196, 196, 196, 0.5);
+            }
+        }
+
+        .name {
+            position: absolute;
+            width: 12.5%;
+            top: 0;
+            left: 0;
+            color: #0088f5;
+            font-size: 2rem;
+            font-family: Offline, "PingFang SC", "Microsoft YaHei", sans-serif;
+            text-shadow: 0.1rem 0.1rem #fff,
+                -0.1rem -0.1rem rgba(68, 68, 68, 0.5);
+            margin: 0;
+            transition: all 0.3s linear;
+            padding-right: 20px;
+            text-align: right;
+            line-height: 56px;
+        }
+    }
+}
